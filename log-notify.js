@@ -10,7 +10,7 @@ module.exports = (function log() {
         debug('setting notifier to terminal-notifier');
 
         notifier = require('terminal-notifier');
-        return function (message) {
+        return function logTerminalNotifier(message) {
             var cleanedMessage = typeof message.stripColors === 'string' ? message.stripColors : message;
             notifier(cleanedMessage, {
                 title: 'Dust Compiler',
@@ -24,7 +24,7 @@ module.exports = (function log() {
         debug('setting notifier to growl');
 
         notifier = require('growl');
-        return function (message) {
+        return function logGrowl(message) {
             var cleanedMessage = typeof message.stripColors === 'string' ? message.stripColors : message;
             notifier(cleanedMessage, { title: 'Dust Compiler' });
             console.log(message);
