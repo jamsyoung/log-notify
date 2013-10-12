@@ -30,8 +30,8 @@ module.exports = function (grunt) {
                 src: ['log-notify.js'],
                 options: {
                     errorsOnly: false,
-                    cyclomatic: 1,
-                    halstead: 6,
+                    cyclomatic: 2,
+                    halstead: 8,
                     maintainability: 100
                 }
             }
