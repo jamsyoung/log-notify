@@ -1,7 +1,7 @@
 # log-notify
 This is a small library that combines [growl][growl] and
 [terminal-notifier][terminal-notifier] into a single call that can be used
-to quickly add notifications to an appliction with support for OS X, Windows 
+to quickly add notifications to an appliction with support for OS X, Windows
 and Linux.  For systems that do not support the OS X Notification Center or
 Growl, the notification will go to `console.log()`.
 
@@ -9,10 +9,6 @@ Growl, the notification will go to `console.log()`.
 [![NPM version](https://badge.fury.io/js/log-notify.png)](http://badge.fury.io/js/log-notify)
 [![Dependency Status](https://gemnasium.com/jamsyoung/log-notify.png)](https://gemnasium.com/jamsyoung/log-notify)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jamsyoung/log-notify/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-<!--
-[![NPM](https://nodei.co/npm/log-notify.png?downloads=true&stars=true)](https://nodei.co/npm/log-notify/)
--->
 
 ## How to add to your application
 
