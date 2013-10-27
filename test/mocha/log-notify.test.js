@@ -3,7 +3,7 @@
 
 var log = require('../../log-notify');
 
-// I haven't found a good way to actually confrim that the notification was
+// I haven't found a good way to actually confirm that the notification was
 // displayed properly on the target OS.
 
 describe('log-notify', function () {
