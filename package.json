@@ -1,6 +1,6 @@
 {
     "name": "log-notify",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com)",
     "description": "An override for console.log that also sends notifications to OS X Notification Center and Growl",
     "main": "log-notify.js",
@@ -20,17 +20,17 @@
         "terminal-notifier": "0.1.2"
     },
     "devDependencies": {
-        "chai": "1.7.2",
+        "chai": "1.8.1",
         "debug": "0.7.2",
         "grunt": "0.4.1",
         "grunt-complexity": "0.1.3",
-        "grunt-contrib-jshint": "0.6.3",
-        "grunt-mocha-test": "0.6.3",
-        "mocha": "1.12.0"
+        "grunt-contrib-jshint": "0.7.0",
+        "grunt-mocha-test": "0.7.0",
+        "mocha": "1.13.0"
     },
     "engines": {
-        "node": ">=0.10.13",
-        "npm": ">=1.3.2"
+        "node": ">=0.10.21",
+        "npm": ">=1.3.11"
     },
     "keywords": [
         "growl",

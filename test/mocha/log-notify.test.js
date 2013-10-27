@@ -3,8 +3,11 @@
 
 var log = require('../../log-notify');
 
+// I haven't found a good way to actually confrim that the notification was
+// displayed properly on the target OS.
+
 describe('log-notify', function () {
-    it('should should return a function', function () {
+    it('should return a function', function () {
         log.should.be.a('function');
     });
 
