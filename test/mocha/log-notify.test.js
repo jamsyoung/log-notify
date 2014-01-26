@@ -2,7 +2,7 @@
 'use strict';
 
 // I haven't found a good way to actually confirm that the notification was
-// displayed properly on the target OS, so when thest tests are run you need
+// displayed properly on the target OS, so when these tests are run you need
 // to visually see if all 4 notifications come up.
 
 describe('log-notify', function () {
