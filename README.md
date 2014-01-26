@@ -10,14 +10,29 @@ Growl, the notification will go to `console.log()`.
 [![Dependency Status](https://gemnasium.com/jamsyoung/log-notify.png)](https://gemnasium.com/jamsyoung/log-notify)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jamsyoung/log-notify/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+
 ## How to add to your application
 
 ```
-var log = require('log-notify');
+var log = require('log-notify')();
 
 log('Hello World!');
 ```
 
+
+## How to specify a title in the notification
+
+```
+var log = require('log-notify')('My Custom Title');
+
+log('Hello World!');
+```
+
+
+<img src="http://new.tinygrab.com/d34460e816bc9a59b25a8abd49123cf565ecac5087.png" />
+
+
+## Demo App
 If you want to see it in action, just run the included `demo-app.js`.
 
 ```
@@ -25,7 +40,6 @@ node demo-app.js
 ```
 
 
-
-
 [growl]: https://npmjs.org/package/growl
 [terminal-notifier]: https://npmjs.org/package/terminal-notifier
+

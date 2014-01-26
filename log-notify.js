@@ -2,18 +2,21 @@
 
 var debug = require('debug')('log-notify');
 
-module.exports = (function log() {
+function log(title) {
     var notifier;
+
+    title = (title === undefined) ? '' : title;
 
     switch (process.platform) {
     case 'darwin':
         debug('setting notifier to terminal-notifier');
 
         notifier = require('terminal-notifier');
+
         return function logTerminalNotifier(message) {
             var cleanedMessage = typeof message.stripColors === 'string' ? message.stripColors : message;
             notifier(cleanedMessage, {
-                title: 'Dust Compiler',
+                title: title,
                 activate: 'com.apple.Terminal'
             });
             console.log(message);
@@ -24,13 +27,17 @@ module.exports = (function log() {
         debug('setting notifier to growl');
 
         notifier = require('growl');
+
         return function logGrowl(message) {
             var cleanedMessage = typeof message.stripColors === 'string' ? message.stripColors : message;
-            notifier(cleanedMessage, { title: 'Dust Compiler' });
+            notifier(cleanedMessage, { title: title });
             console.log(message);
         };
 
     default:
         return console.log;
     }
-}());
+}
+
+module.exports = log;
+
