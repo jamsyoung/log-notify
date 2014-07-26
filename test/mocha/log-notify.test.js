@@ -1,4 +1,4 @@
-/* global describe, it */
+/* jshint mocha: true */
 'use strict';
 
 // I haven't found a good way to actually confirm that the notification was
