@@ -1,6 +1,6 @@
 {
   "name": "log-notify",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "author": "James Young <jmeyoung@gmail.com> (http://jamsyoung.com)",
   "description": "An override for console.log that also sends notifications to OS X Notification Center and Growl",
   "main": "log-notify.js",
